@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+    color: #333;
+    transition: all 0.3s ease;
+}
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+body.dark-mode .container {
+    background: #2c2c2c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+body.dark-mode h1 {
+    color: #3498db;
+}
+.search-box {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+body.dark-mode #searchInput {
+    background: #333;
+    color: #f4f4f4;
+    border-color: #2980b9;
+}
+#searchInput:focus {
+    border-color: #2980b9;
+}
+#searchButton {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#searchButton:hover {
+    background-color: #2980b9;
+}
+#toggleDarkMode {
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#toggleDarkMode:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+body.dark-mode #toggleDarkMode {
+    background-color: #f1c40f;
+    color: #1a1a1a;
+}
+.document {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+body.dark-mode .document {
+    border-bottom: 1px solid #444;
+}
+.document h3 {
+    margin: 0;
+    color: #3498db;
+}
+.document p {
+    margin: 5px 0;
+    color: #555;
+}
+body.dark-mode .document p {
+    color: #ccc;
+}
+.no-results {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 18px;
+}
+.initial-message {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+}
+body.dark-mode .initial-message {
+    color: #ccc;
+}
