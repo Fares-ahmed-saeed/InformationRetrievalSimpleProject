@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>نظام استرجاع المعلومات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <button id="toggleDarkMode">☀️</button>
+        <button id="toggleDarkMode"><i class="fas fa-moon"></i></button>
         <h1>نظام استرجاع المعلومات</h1>
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="ابحث بالعربية أو الإنجليزية...">
-            <button id="searchButton">بحث</button>
+            <select id="categoryFilter">
+                <option value="">جميع الفئات</option>
+                <option value="AI">الذكاء الاصطناعي</option>
+                <option value="IR">استرجاع البيانات</option>
+                <option value="BigData">البيانات الضخمة</option>
+                <option value="Cloud">الحوسبة السحابية</option>
+                <option value="Analytics">تحليل البيانات</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="UIUX">UI/UX</option>
+                <option value="DevOps">DevOps</option>
+                <option value="Other">أخرى</option>
+            </select>
+            <button id="searchButton"><i class="fas fa-search"></i> بحث</button>
+            <button id="clearSearch">مسح</button>
         </div>
+        <div id="resultsCount"></div>
         <div id="results">
-            <p class="initial-message">اكتب كلمة للبحث عن الوثائق</p>
+            <p class="initial-message">اكتب كلمة أو اختر فئة للبحث عن الوثائق</p>
         </div>
     </div>
-
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
