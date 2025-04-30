@@ -187,14 +187,11 @@ body.dark-mode .initial-message {
         flex-direction: column;
         align-items: center;
     }
-    #searchInput {
+    #searchInput, #categoryFilter {
         max-width: 90%;
     }
-    #caregoryFilter {
-       max-width: 100%;
-    }
     #searchButton, #clearSearch {
-        width: 90%;
+        width: 100%;
         max-width: 200px;
     }
 }
